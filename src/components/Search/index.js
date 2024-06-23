@@ -47,7 +47,7 @@ const Search = () => {
         <div className="search-controls">
           <input
             type="text"
-            placeholder="Search by title"
+            placeholder="Enter Movie Name"
             value={searchTerm}
             onChange={handleSearch}
           />
@@ -56,7 +56,7 @@ const Search = () => {
             value={selectedCategory}
             onChange={handleCategoryChange}
           >
-            <option value="">Category</option>
+            <option value="">Genre</option>
             {["Action", "Comedy", "Thriller", "Drama"].map((category) => (
               <option key={category} value={category}>
                 {category}
